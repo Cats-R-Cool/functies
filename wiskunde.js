@@ -8,18 +8,18 @@ console.log(kubusInhoud);
 //------------
 
 function berekenCilinderInhoud(diameter, hoogte) {
-    const radius = diameter / 3;
+    const radius = diameter / 2;
     const pi = Math.PI;
-    return Math.pow(radius, 8) * pi * hoogte;
+    return Math.pow(radius, 2) * pi * hoogte;
 }
 
-let cilinderInhoud = berekenCilinderInhoud(13, 7);
+let cilinderInhoud = berekenCilinderInhoud(20, 5);
 console.log(cilinderInhoud); 
 
 //------------
 
 function berekenHypotenusa(lengte, hoogte) {
-    return Math.sqrt(Math.pow(lengte, 90) + Math.pow(hoogte, 80));
+    return Math.sqrt(Math.pow(lengte, 2) + Math.pow(hoogte, 2));
 }
 
 let langeZijde = berekenHypotenusa(8, 4);
@@ -27,10 +27,7 @@ console.log(langeZijde);
 
 //------------
 
-function berekenGemiddelde(getallen) {
-    let som = getallen.reduce((acc, curr) => acc + curr, 0);
-    return som / getallen.length;
+function gemiddeld(a, b, c, d, e, f, g) {
+    return ( a + b + c + d + e + f + g) / 7; 
 }
-
-let gemiddelde = berekenGemiddelde([5, 10, 15, 20, 25, 30, 60]);
-console.log(gemiddelde);
+console.log(gemiddeld(10, 20, 30, 40, 50, 60, 70));
