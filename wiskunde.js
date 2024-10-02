@@ -7,8 +7,8 @@ console.log(kubusInhoud);
 
 //------------
 
-function berekenCilinderInhoud(diameter, hoogte) {
-    const radius = diameter / 2;
+function berekenCilinderInhoud(straal, hoogte) {
+    const radius = straal / 2;
     const pi = Math.PI;
     return Math.pow(radius, 2) * pi * hoogte;
 }
